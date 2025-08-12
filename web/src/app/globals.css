@@ -24,6 +24,11 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Bootstrap toast container spacing fix for mobile safe area */
+.toast-container {
+  padding-bottom: calc(env(safe-area-inset-bottom, 0) + 1rem) !important;
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
