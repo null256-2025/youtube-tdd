@@ -1,14 +1,8 @@
 {
   "version": 2,
   "builds": [
-    { "src": "web/next.config.ts", "use": "@vercel/next" }
+    { "src": "web/package.json", "use": "@vercel/next" }
   ],
-  "framework": "nextjs",
-  "github": {
-    "enabled": true,
-    "autoJobCancelation": true,
-    "silent": false
-  },
   "routes": [
     { "src": "/(.*)", "dest": "web/$1" }
   ]
